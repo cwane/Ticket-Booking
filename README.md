@@ -28,7 +28,7 @@ git clone https://github.com/cwane/Ticket-Booking.git
 enter inside the project directory
 
 ```
-cd ticket_booking_system
+cd ticket-booking
 ```
 
 install all the dependencies
