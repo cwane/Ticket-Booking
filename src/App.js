@@ -1,7 +1,7 @@
 
 import NavBar from "./components/NavBar"
 
-import SingleTicketPage from "./Pages/SingleTicketPage/SingleTicketPage";
+import EventDetailsPage from "./Pages/EventDetailsPage/EventDetailsPage";
 import OrderConfirmationPage from "./Pages/OrderConfirmationpage/OrderConfirmationPage"
 
 import { Routes, Route } from 'react-router-dom';
@@ -12,31 +12,19 @@ import './index.css';
 
 function App() {
   return (
-    <div className="hfeed site" id="page">
+    <div className='bg-[#13131A]'>
 
     <NavBar />
     
-    
-    <div id="content" className="site-content">
-      <div id="primary" className="content-area">
-        <main id="main" className="site-main">
-
-        
-
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/eventdetails" element={<SingleTicketPage />} />
-            <Route path="/confirmationpage" element={<OrderConfirmationPage />} />
-            <Route path="/invoicepage" element={<InvoicePage />} />
+            <Route path="/eventdetails/:id" element={<EventDetailsPage />} />
+            <Route path="/confirm-order/:id" element={<OrderConfirmationPage />} />
+            <Route path="/confirm-order/:id/payment" element={<InvoicePage />} />
             
           </Routes>
 
-        </main>
-        {/* #main */}
-      </div>
-      {/* #primary */}
-    </div>
-    {/* .site-content */}
+      
 
    
   </div>
