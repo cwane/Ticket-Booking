@@ -2,7 +2,7 @@ Link to the Project (https://ticket-booking-lime.vercel.app/)
 
 Introduction
 
-This is a ticket booking system task by Lanceme Up. The task is to create a ticket booking system for a movie theatre. The system should be able to book tickets for a movie.
+This is a ticket booking system. The task is to create a ticket booking system for a movie theatre. The system should be able to book tickets for a movie.
 
 ## Built With
 - [ReactJS](https://react.dev/reference/react) - frontend UI
